@@ -4,6 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f; // Player movement speed
     public float rotationSpeed = 180f; // Player rotation speed
+    public int currentFloor = 1;
 
     private CharacterController characterController;
 
