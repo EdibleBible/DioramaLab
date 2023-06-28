@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class TeleportCylinder : MonoBehaviour
 {
-    public Material redMaterial;
-    public Material greenMaterial;
     public GameObject elevatorPanel;
     public TeleportCylinder elevatorHigher; // Reference to the other teleport cylinder
     public TeleportCylinder elevatorLower; // Reference to the other teleport cylinder
@@ -49,7 +47,6 @@ public class TeleportCylinder : MonoBehaviour
                 player.transform.position = elevatorLower.transform.position;
                 break;
         }
-        GetComponent<Renderer>().material = greenMaterial;
 
         yield return null;
 
@@ -62,7 +59,6 @@ public class TeleportCylinder : MonoBehaviour
         {
             playerEntered = true;
             elevatorPanel.SetActive(true);
-            GetComponent<Renderer>().material = redMaterial;
         }
     }
 
@@ -72,7 +68,6 @@ public class TeleportCylinder : MonoBehaviour
         {
             playerEntered = false;
             elevatorPanel.SetActive(false);
-            GetComponent<Renderer>().material = greenMaterial;
         }
     }
 }

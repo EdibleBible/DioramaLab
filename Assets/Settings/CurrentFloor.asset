@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24c696ae70e1f545a553c8ddf25de69, type: 3}
   m_Name: CurrentFloor
   m_EditorClassIdentifier: 
-  currentFloor: 1
+  currentFloor: 0
